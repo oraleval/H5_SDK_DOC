@@ -43,7 +43,7 @@
 | ----- | ----- |
 | 说明 | 停止录音并开始评测 |
 | 参数 | --- | 
-| 返回值 | 可以忽略 | 
+| 返回值 | Promise  data  //{text, mode, sessionId, mp3},函数返回可以忽略 | 
 
 <br/>
 
@@ -71,7 +71,6 @@
 | ----- | ----- |
 | 说明 | 分数调整定制参数，可以对同样质量的语音调整得分高低 |
 | 参数score | 范围是0.6~1.9，默认情况下是1.0,设置越低，打分越严格，设置系数越高 | 
-| 返回值 | 最低2.0.0 | 
 
 <br/>
 
@@ -158,15 +157,6 @@
 
 <br/>
 
-*  function onStop(e)
-
-|  |  |
-| ----- | ----- |
-| 说明 | 停止录音回调函数 |
-| 参数e | 回调事件 | 
-| 返回值 | {"text":"评测文本", "mode": "评测模式", "sessionId": "sessionId"} | 
-
-<br/>
 
 *  function onError(err)
 
@@ -210,9 +200,9 @@
 
 ```
     var recorder    = new EvalSDK({
-      userId          :  AE8F62A7-DDAE-4FD3-ADD4-D0280CEA3EDE;
-      scoreCoefficient:  1.0;
-      mode            :  G;
+      userId          :  "AE8F62A7-DDAE-4FD3-ADD4-D0280CEA3EDE";
+      scoreCoefficient:  "1.0";
+      mode            :  "G";
       debug           :  true
     })
 ```
