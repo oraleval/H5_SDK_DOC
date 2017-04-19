@@ -1,23 +1,23 @@
 # 云知声口语评测服务H5 SDK API文档
 
+### 可设置参数
+* @param option 配置选项
+* @param option.userId  用户Id
+* @param [option.host]    评测服务器地址 default http://edu.hivoice.cn
+* @param [option.port]    评测服务器端口号 default 8085
+* @param [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
+* @param [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
+* @param [option.audioFormat]  //上传的音频格式可选值 ["mp3", "opus", "amrnb"] default mp3
+* @param [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行评测
+* @param [option.debug]  开启日志打印
 
 
-* [OralEvalSDKFactory](#oralevalsdkfactory)
-    * [OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig)
-* [IOralEvalSDK](#ioralevalsdk)
-	* [IOralEvalSDK.OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)
- 	* [IOralEvalSDK.ICallback](#ioralevalsdkicallback)
- * [SDKError](#ioralevalsdkerror)
- * [Json字段说明](#result-description)
+*  function EvalSDK(option)
 
-
-<br/>
-
-### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
-<br/>
-
-
-评测静态工厂类，用于设置评测服务地址、初始化离线引擎、发起评测等。
+|  |  |
+| ----- | ----- |
+| 说明 | 创建评测对象 |
+| 参数addr | 以上@param中可设置参数 | 
 
 <br/>
 
