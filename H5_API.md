@@ -215,5 +215,4 @@
       mode            :  G;
       debug           :  true
     })
-    });
 ```
