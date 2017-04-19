@@ -47,7 +47,7 @@
 
 <br/>
 
-*  function setServerAddr(addr)
+*  function setServerAddr(host)
 
 |  |  |
 | ----- | ----- |
