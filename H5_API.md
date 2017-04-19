@@ -3,6 +3,7 @@
 * [可设参数](#params)
 * [函数列表](#functions)
 * [回调函数](#callback)
+* [示例demo](#create)
 
 #### <a name="params"></a> 可设置参数（[]中是可选参数）
 * option 配置选项
@@ -79,7 +80,7 @@
 |  |  |
 | ----- | ----- |
 | 说明 | 评测模式 |
-| 参数mode | 包含A B C D E G H，A B D H 是常用模式，A：最简单模式，结果只有单词打分没有音素信息；B：有音素信息，但是没有音素打分；C：跟A一样，区别是最外层有Score总分;D：在B的基础上，有音素打分;E：返回words字段里的值，有空格和标点符号，但是没有音素打分(针对个别客户需求);G：跟D一样;H：选择题打分模式 | 
+| 参数mode | 包含A B C D E G H，A B D H 是常用模式<br>A：最简单模式，结果只有单词打分没有音素信息；<br>B：有音素信息，但是没有音素打分；<br>C：跟A一样，区别是最外层有Score总分;<br>D：在B的基础上，有音素打分;<br>E：返回words字段里的值，有空格和标点符号，但是没有音素打分(针对个别客户需求);<br>G：跟D一样;<br>H：选择题打分模式 | 
 
 <br/>
 
@@ -204,3 +205,14 @@
 | 参数 | --- | 
 
 <br/>
+
+ <a name="create"></a> 示例demo
+
+```创建对象示例代码
+    var recorder    = new EvalSDK({
+      userId          : userId.value || "only-for-test,
+      scoreCoefficient: score.value || 1.0,
+      mode            : mode.value, G
+      debug           : true
+    });
+```
