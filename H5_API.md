@@ -1,9 +1,10 @@
 # 云知声口语评测服务H5 SDK API文档
 
+* [可设参数](#params)
 * [函数列表](#functions)
 * [回调函数](#callback)
 
-### 可设置参数（[]中是可选参数）
+#### <a name="params"></a> 可设置参数（[]中是可选参数）
 * option 配置选项
 * option.userId  用户Id
 * [option.host]    评测服务器地址 default https://edu.hivoice.cn
