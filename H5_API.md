@@ -2,7 +2,25 @@
 
 * [可设参数](#params)
 * [函数列表](#functions)
+    * [function EvalSDK](#EvalSDK)
+    * [function start](#start)
+    * [function stop](#stop)
+    * [function setServerAddr](#setServerAddr)
+    * [function setAudioFormat](#setAudioFormat)
+    * [function setScoreCoefficient](#setScoreCoefficient)
+    * [function setMode](#setMode)
+    * [function evaluate](#evaluate)
+    * [function getBlob](#getBlob)
+    * [function playLocal](#playLocal)
+    * [function stopPlayLocal](#stopPlayLocal)
 * [回调函数](#callback)
+    * [function onReady](#onReady)
+    * [function onStart](#onStart)
+    * [function onStop](#onStop)
+    * [function onError](#onError)
+    * [function onResult](#onResult)
+    * [function onPlayLocal](#onPlayLocal)
+    * [function onStopPlayLocal](#onStopPlayLocal)
 * [示例demo](#create)
 
 #### <a name="params"></a> 可设置参数（[]中是可选参数）
@@ -18,7 +36,7 @@
 
 #### <a name="functions"></a> 函数列表
 
-*  function EvalSDK(option)
+*  <a name="EvalSDK"></a> function EvalSDK(option)
 
 |  |  |
 | ----- | ----- |
@@ -27,7 +45,7 @@
 
 <br/>
 
-*  function start(text, mode)
+*  <a name="start"></a> function start(text, mode)
 
 |  |  |
 | ----- | ----- |
@@ -37,7 +55,7 @@
 
 <br/>
 
-*  function stop()
+*  <a name="stop"></a> function stop()
 
 |  |  |
 | ----- | ----- |
@@ -47,7 +65,7 @@
 
 <br/>
 
-*  function setServerAddr(host)
+*  <a name="setServerAddr"></a> function setServerAddr(host)
 
 |  |  |
 | ----- | ----- |
@@ -56,7 +74,7 @@
 
 <br/>
 
-*  function setAudioFormat(format)
+*  <a name="setAudioFormat"></a> function setAudioFormat(format)
 
 |  |  |
 | ----- | ----- |
@@ -65,7 +83,7 @@
 
 <br/>
 
-*  function setScoreCoefficient(score)
+*  <a name="setScoreCoefficient"></a> function setScoreCoefficient(score)
 
 |  |  |
 | ----- | ----- |
@@ -74,7 +92,7 @@
 
 <br/>
 
-*  function setMode(mode)
+*  <a name="setMode"></a> function setMode(mode)
 
 |  |  |
 | ----- | ----- |
@@ -83,7 +101,7 @@
 
 <br/>
 
-*  function evaluate(text, voice, mode)
+*  <a name="evaluate"></a> function evaluate(text, voice, mode)
 
 |  |  |
 | ----- | ----- |
@@ -95,7 +113,7 @@
 
 <br/>
 
-*  function getBlob()
+*  <a name="getBlob"></a> function getBlob()
 
 |  |  |
 | ----- | ----- |
@@ -105,7 +123,7 @@
 
 <br/>
 
-*  function playLocal()
+*  <a name="playLocal"></a> function playLocal()
 
 |  |  |
 | ----- | ----- |
@@ -115,7 +133,7 @@
 
 <br/>
 
-*  function stopPlayLocal()
+*  <a name="stopPlayLocal"></a> function stopPlayLocal()
 
 |  |  |
 | ----- | ----- |
@@ -127,7 +145,7 @@
 
 #### <a name="callback"></a> 回调函数
 
-*  function onReady()
+*  <a name="onReady"></a> function onReady()
 
 |  |  |
 | ----- | ----- |
@@ -137,7 +155,7 @@
 
 <br/>
 
-*  function onStart(sessionId)
+*  <a name="onStart"></a> function onStart(sessionId)
 
 |  |  |
 | ----- | ----- |
@@ -147,7 +165,7 @@
 
 <br/>
 
-*  function onStop(e)
+*  <a name="onStop"></a> function onStop(e)
 
 |  |  |
 | ----- | ----- |
@@ -158,7 +176,7 @@
 <br/>
 
 
-*  function onError(err)
+*  <a name="onError"></a> function onError(err)
 
 |  |  |
 | ----- | ----- |
@@ -168,7 +186,7 @@
 
 <br/>
 
-*  function onResult(result)
+*  <a name="onResult"></a> function onResult(result)
 
 |  |  |
 | ----- | ----- |
@@ -178,7 +196,7 @@
 
 <br/>
 
-*  function onPlayLocal()
+*  <a name="onPlayLocal"></a> function onPlayLocal()
 
 |  |  |
 | ----- | ----- |
@@ -187,7 +205,7 @@
 
 <br/>
 
-*  function onStopPlayLocal()
+*  <a name="onStopPlayLocal"></a> function onStopPlayLocal()
 
 |  |  |
 | ----- | ----- |
