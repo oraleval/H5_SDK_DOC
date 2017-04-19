@@ -3,7 +3,7 @@
 * [可设参数](#params)
 * [函数列表](#functions)
     * [function EvalSDK](#EvalSDK)
-    * [function start](#start)
+    * [function start](#start)
     * [function stop](#stop)
     * [function setServerAddr](#setServerAddr)
     * [function setAudioFormat](#setAudioFormat)
