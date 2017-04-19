@@ -1,16 +1,20 @@
 # 云知声口语评测服务H5 SDK API文档
 
-### 可设置参数
-* @param option 配置选项
-* @param option.userId  用户Id
-* @param [option.host]    评测服务器地址 default http://edu.hivoice.cn
-* @param [option.port]    评测服务器端口号 default 8085
-* @param [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
-* @param [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
-* @param [option.audioFormat]  //上传的音频格式可选值 ["mp3", "opus", "amrnb"] default mp3
-* @param [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行评测
-* @param [option.debug]  开启日志打印
+* [函数列表](#functions)
+* [回调函数](#callback)
 
+### 可设置参数（[]中是可选参数）
+* option 配置选项
+* option.userId  用户Id
+* [option.host]    评测服务器地址 default http://edu.hivoice.cn
+* [option.port]    评测服务器端口号 default 8085
+* [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
+* [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
+* [option.audioFormat]  //上传的音频格式可选值 ["mp3", "opus", "amrnb"] default mp3
+* [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行评测
+* [option.debug]  开启日志打印
+
+#### <a name="functions"></a> 函数列表
 
 *  function EvalSDK(option)
 
@@ -18,6 +22,26 @@
 | ----- | ----- |
 | 说明 | 创建评测对象 |
 | 参数addr | 以上@param中可设置参数 | 
+
+<br/>
+
+*  function start(text, mode)
+
+|  |  |
+| ----- | ----- |
+| 说明 | 开始录音方法 |
+| 参数text | 评测文本 | 
+| 参数mode | 评测模式 | 
+
+<br/>
+
+*  function stop()
+
+|  |  |
+| ----- | ----- |
+| 说明 | 停止录音并开始评测 |
+| 参数 | --- | 
+| 返回值 | 可以忽略 | 
 
 <br/>
 
@@ -49,7 +73,7 @@
 
 <br/>
 
-*  function setModel(mode)
+*  function setMode(mode)
 
 |  |  |
 | ----- | ----- |
@@ -67,26 +91,6 @@
 | 参数voice | 评测音频 | 
 | 参数mode | 评测模式 | 
 | 返回值 | json格式评测结果 | 
-
-<br/>
-
-*  function start(text, mode)
-
-|  |  |
-| ----- | ----- |
-| 说明 | 开始录音方法 |
-| 参数text | 评测文本 | 
-| 参数mode | 评测模式 | 
-
-<br/>
-
-*  function stop()
-
-|  |  |
-| ----- | ----- |
-| 说明 | 停止录音并开始评测 |
-| 参数 | --- | 
-| 返回值 | 可以忽略 | 
 
 <br/>
 
@@ -120,6 +124,8 @@
 
 <br/>
 
+#### <a name="callback"></a> 回调函数
+
 *  function onReady()
 
 |  |  |
@@ -140,13 +146,13 @@
 
 <br/>
 
-*  function onStart(sessionId)
+*  function onStop(e)
 
 |  |  |
 | ----- | ----- |
 | 说明 | 停止录音回调函数 |
-| 参数sessionId | 表示该次评测的唯一表示，必须上传，可使用 uuid | 
-| 返回值 | --- | 
+| 参数e | 回调事件 | 
+| 返回值 | {"text":"评测文本", "mode": "评测模式", "sessionId": "sessionId" | 
 
 <br/>
 
@@ -155,8 +161,8 @@
 |  |  |
 | ----- | ----- |
 | 说明 | 停止录音回调函数 |
-| 参数e | e  //{"text":"评测文本", "mode": "评测模式", "sessionId": "sessionId"} | 
-| 返回值 | --- | 
+| 参数e | 回调事件 | 
+| 返回值 | {"text":"评测文本", "mode": "评测模式", "sessionId": "sessionId"} | 
 
 <br/>
 
