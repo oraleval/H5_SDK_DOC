@@ -208,11 +208,12 @@
 
 #### <a name="create"></a> 示例demo
 
-```创建对象示例代码
+```
     var recorder    = new EvalSDK({
-      userId          : userId.value || "only-for-test,
-      scoreCoefficient: score.value || 1.0,
-      mode            : mode.value, G
-      debug           : true
+      userId          :  AE8F62A7-DDAE-4FD3-ADD4-D0280CEA3EDE;
+      scoreCoefficient:  1.0;
+      mode            :  G;
+      debug           :  true
+    })
     });
 ```
