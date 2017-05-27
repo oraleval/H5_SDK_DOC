@@ -123,7 +123,8 @@
 | 返回值 | 二进制mp3文件 | 
 
 <br/>
-*  <a name="getSoundUrl"></a> function getBlob()
+
+*  <a name="getSoundUrl"></a> function getSoundUrl()
 
 |  |  |
 | ----- | ----- |
