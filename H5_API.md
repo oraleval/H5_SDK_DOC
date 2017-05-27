@@ -11,6 +11,7 @@
     * [function setMode](#setMode)
     * [function evaluate](#evaluate)
     * [function getBlob](#getBlob)
+    * [function getSoundUrl](#getSoundUrl)
     * [function playLocal](#playLocal)
     * [function stopPlayLocal](#stopPlayLocal)
 * [回调函数](#callback)
@@ -26,7 +27,7 @@
 #### <a name="params"></a> 可设置参数（[]中是可选参数）
 * option 配置选项
 * option.userId  用户Id
-* [option.host]    评测服务器地址 default https://edu.hivoice.cn
+* [option.host]    评测服务器地址 default edu.hivoice.cn
 * [option.port]    评测服务器端口号 default 4443
 * [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
 * [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
@@ -117,9 +118,18 @@
 
 |  |  |
 | ----- | ----- |
-| 说明 | 获取本地Mp3 |
+| 说明 | 获取本地Mp3 (废弃)|
 | 参数 | --- | 
 | 返回值 | 二进制mp3文件 | 
+
+<br/>
+*  <a name="getSoundUrl"></a> function getBlob()
+
+|  |  |
+| ----- | ----- |
+| 说明 | 获取音频地址 |
+| 参数 | --- | 
+| 返回值 | 音频URL地址 | 
 
 <br/>
 
@@ -127,7 +137,7 @@
 
 |  |  |
 | ----- | ----- |
-| 说明 | 播放本地Mp3 |
+| 说明 | 播放本地音频 |
 | 参数 | --- | 
 | 返回值 | --- | 
 
