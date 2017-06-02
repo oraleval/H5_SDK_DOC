@@ -12,6 +12,7 @@
     * [function evaluate](#evaluate)
     * [function getBlob](#getBlob)
     * [function getSoundUrl](#getSoundUrl)
+    * [function getResultUrl](#getResultUrl)
     * [function playLocal](#playLocal)
     * [function stopPlayLocal](#stopPlayLocal)
 * [回调函数](#callback)
@@ -28,10 +29,11 @@
 * option 配置选项
 * option.userId  用户Id
 * [option.host]    评测服务器地址 default edu.hivoice.cn
-* [option.port]    评测服务器端口号 default 4443
-* [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
+* [option.port]    评测服务器端口号 default ''
+* [option.useFlash]  启用flash录音
+* [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
 * [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
-* [option.audioFormat]  //上传的音频格式 16k16bit 32kpbs 单声道mp3格式
+* [option.audioFormat]  //上传的音频格式 16k16bit 32kpbs 单声道opus格式
 * [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行评测
 * [option.debug]  开启日志打印
 
@@ -131,6 +133,16 @@
 | 说明 | 获取音频地址 |
 | 参数 | --- | 
 | 返回值 | 音频URL地址 | 
+
+<br/>
+
+*  <a name="getResultUrl"></a> function getResultUrl()
+
+|  |  |
+| ----- | ----- |
+| 说明 | 获取评测结果地址 |
+| 参数 | --- | 
+| 返回值 | 评测结果地址 | 
 
 <br/>
 
