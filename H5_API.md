@@ -35,6 +35,7 @@
 * [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
 * [option.audioFormat]  //上传的音频格式 16k16bit 32kpbs 单声道opus格式
 * [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行评测
+* [option.autoStop]  根据文本长度自动停止 可选值true/1~6  默认:false  (true等价于3)
 * [option.debug]  开启日志打印
 
 #### <a name="functions"></a> 函数列表
