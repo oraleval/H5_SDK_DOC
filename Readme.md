@@ -34,7 +34,7 @@
 * [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
 * [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
 * [option.audioFormat]  //上传的音频格式 16k16bit 32kpbs 单声道opus格式
-* [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行评测
+* [option.useSelfAudio]  如果设置为true, 将不使用内置录音(不加载录音相关组件), 调用evaluate接口进行文件评测
 * [option.autoStop]  根据文本长度自动停止 可选值true/1~6  默认:false  (true等价于3)
 * [option.debug]  开启日志打印
 
@@ -109,9 +109,9 @@
 
 |  |  |
 | ----- | ----- |
-| 说明 | 进行评测 |
+| 说明 | 进行评测 | 
 | 参数text | 评测文本 | 
-| 参数voice | 评测音频 | 
+| 参数voice | 评测音频, SDK录音只支持opus,如果使用本地音频评测请注意设置setAudioFormat | 
 | 参数mode | 评测模式 | 
 | 返回值 | json格式评测结果 | 
 
