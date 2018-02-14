@@ -30,6 +30,8 @@
 * option.userId  用户Id
 * [option.host]    评测服务器地址 default edu.hivoice.cn
 * [option.port]    评测服务器端口号 default ''
+* [opt.hostCn]  评测服务器地址 default cn-edu.hivoice.cn
+* [opt.portCn]  评测服务器端口号 default ''
 * [option.useFlash]  启用flash录音
 * [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
 * [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
@@ -49,13 +51,14 @@
 
 <br/>
 
-*  <a name="start"></a> function start(text, mode)
+*  <a name="start"></a> function start(text, mode, language)
 
 |  |  |
 | ----- | ----- |
 | 说明 | 开始录音方法 |
 | 参数text | 评测文本 | 
 | 参数mode | 评测模式 | 
+| 参数language | 语言种类 有效值[en/cn] | 
 
 <br/>
 
@@ -105,7 +108,7 @@
 
 <br/>
 
-*  <a name="evaluate"></a> function evaluate(text, voice, mode)
+*  <a name="evaluate"></a> function evaluate(text, voice, mode, language)
 
 |  |  |
 | ----- | ----- |
@@ -113,6 +116,7 @@
 | 参数text | 评测文本 | 
 | 参数voice | 评测音频, SDK录音只支持opus,如果使用本地音频评测请注意设置setAudioFormat | 
 | 参数mode | 评测模式 | 
+| 参数language | 语言种类 有效值[en/cn]|
 | 返回值 | json格式评测结果 | 
 
 <br/>
