@@ -59,6 +59,7 @@
 | 参数text | 评测文本 | 
 | 参数mode | 评测模式 | 
 | 参数language | 语言种类 有效值[en/cn] | 
+| 说明：当使用中文模式[cn]时 text如果不是json则将强制转为json对象 {"DisplayText":"text"}
 
 <br/>
 
@@ -116,7 +117,7 @@
 | 参数text | 评测文本 | 
 | 参数voice | 评测音频, SDK录音只支持opus,如果使用本地音频评测请注意设置setAudioFormat | 
 | 参数mode | 评测模式 | 
-| 参数language | 语言种类 有效值[en/cn]|
+| 参数language | 语言种类 有效值[en/cn] 说明：当使用中文模式[cn]时 text如果不是json则将强制转为json对象 {"DisplayText":"text"} |
 | 返回值 | json格式评测结果 | 
 
 <br/>
