@@ -31,7 +31,7 @@
 * [option.host]    评测服务器地址 default edu.hivoice.cn
 * [option.port]    评测服务器端口号 default ''
 * [opt.hostCn]  评测服务器地址 default cn-edu.hivoice.cn
-* [opt.portCn]  评测服务器端口号 default ''
+* [opt.portCn]  评测服务器端口号 default '' 
 * [option.useFlash]  启用flash录音
 * [option.mode]    评测模式（包含A B C D E G H，A B D H 是常用模式） default  A
 * [option.scoreCoefficient]  分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，
