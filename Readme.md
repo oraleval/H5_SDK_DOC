@@ -25,6 +25,11 @@
     * [function onStopPlayLocal](#onStopPlayLocal)
 * [示例demo](#create)
 
+**<a href=https://github.com/oraleval/ErrorCodeList/wiki/HomePage>错误码说明</a>**
+
+**<a href=https://github.com/oraleval/FAQ-Docs/blob/master/Json%20Description.md>Json返回结果说明</a>**
+#### response headers
+
 #### <a name="params"></a> 可设置参数（[]中是可选参数）
 * option 配置选项
 * option.userId  用户Id
