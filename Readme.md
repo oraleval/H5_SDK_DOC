@@ -33,7 +33,7 @@
 
 #### <a name="process"></a> 调用流程
 
->> ![image](https://github.com/oraleval/http_api_doc/blob/master/HTTP%E8%AF%84%E6%B5%8B%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.png)
+>> ![image](https://github.com/oraleval/H5_SDK_DOC/blob/master/H5调用流程图.png)
 
 
 #### <a name="params"></a> 可设置参数（[]中是可选参数）
