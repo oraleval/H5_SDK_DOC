@@ -1,5 +1,6 @@
 # 云知声口语评测服务H5 SDK API文档
 
+* [调用流程](#process)
 * [可设参数](#params)
 * [函数列表](#functions)
     * [function EvalSDK](#EvalSDK)
@@ -24,11 +25,16 @@
     * [function onPlayLocal](#onPlayLocal)
     * [function onStopPlayLocal](#onStopPlayLocal)
 * [示例demo](#create)
+* [错误码说明](#error)
 
-**<a href=https://github.com/oraleval/ErrorCodeList/wiki/HomePage>错误码说明</a>**
 
 **<a href=https://github.com/oraleval/FAQ-Docs/blob/master/Json%20Description.md>Json返回结果说明</a>**
 #### response headers
+
+#### <a name="process"></a> 调用流程
+
+>> ![image](https://github.com/oraleval/http_api_doc/blob/master/HTTP%E8%AF%84%E6%B5%8B%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.png)
+
 
 #### <a name="params"></a> 可设置参数（[]中是可选参数）
 * option 配置选项
@@ -248,6 +254,7 @@
 
 <br/>
 
+
 #### <a name="create"></a> 示例demo
 
 ```
@@ -258,3 +265,30 @@
       debug           :  true
     })
 ```
+
+
+#### <a name="error"></a> 错误码说明
+
+
+|  |  |
+| ----- | ----- |
+| 错误码 |  错误码描述 |
+| 1001 | 传入的评测文本为空 | 
+| 1002 | 没有音频 |
+| 1003 | 没有网络 |
+| 1004 | 传入评测过程服务端返回的错误码 |
+| 1005 | 没有录音 |
+| 1006 | 文本过长，最长支持16000字符 |
+| 1007 | 打分系数设置错误，可选范围0.6-1.9 |
+| 1008 | 评测模式设置错误，可以设置的值A、B、C、E、G、H |
+| 1009 | 音频格式错误，可选值为:  mp3 , opus , amrnb |
+| 1010 | 未设置评测服务地址 |
+| 1011 | {code: 1010, msg: "addr is required"}, |
+| 1012 | 用户拒绝访问麦克风 |
+| 1013 | 浏览器不支持录音 |
+| 1014 | 找不到麦克风设备 |
+| 1015 | 无法打开麦克风 |
+| 1016 | 获取音频失败 |
+| 1017 | 解析失败 |
+
+以上1004返回的服务端错误码可以参照 **<a href=https://github.com/oraleval/ErrorCodeList/wiki/HomePage>服务端错误码说明</a>**
