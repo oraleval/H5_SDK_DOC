@@ -283,7 +283,7 @@
 | 1008 | 评测模式设置错误，可以设置的值A、B、C、E、G、H |
 | 1009 | 音频格式错误，可选值为:  mp3 , opus , amrnb |
 | 1010 | 未设置评测服务地址或评测地址错误 |
-| 1011 | {code: 1010, msg: "addr is required"}, |
+| 1011 | 无法打开麦克风，请使用https协议。Only secure origins are allowed(see https://goo.gl/Y0ZkNV) |
 | 1012 | 用户拒绝访问麦克风 |
 | 1013 | 浏览器不支持录音 |
 | 1014 | 找不到麦克风设备 |
