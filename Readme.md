@@ -90,6 +90,7 @@
 | ----- | ----- |
 | 说明 | 设置评测服务器地址,setAudioFormat会将设置的地址重置 |
 | 参数addr | 评测服务器地址，如: http://edu.hivoice.cn:8085/eval/opus | 
+| 参数language | 评测服务语言  en/cn  默认en英文服务|
 
 <br/>
 
