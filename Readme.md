@@ -1,4 +1,4 @@
-# 云知声口语评测服务H5 SDK API文档
+# 云知声口语评测服务H5 SDK API文档（只适用于PC）
 
 * [调用流程](#process)
 * [可设参数](#params)
