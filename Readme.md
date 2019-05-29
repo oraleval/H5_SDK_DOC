@@ -212,7 +212,7 @@
 | ----- | ----- |
 | 说明 | 停止录音回调函数 |
 | 参数e | 回调事件 | 
-| 返回值 | {"text":"评测文本", "mode": "评测模式", "sessionId": "sessionId" | 
+| 返回值 | {"text":"评测文本","mode":"评测模式","sessionId":"sessionId","voice":"opus音频"} | 
 
 <br/>
 
