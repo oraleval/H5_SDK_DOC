@@ -84,6 +84,15 @@
 
 <br/>
 
+*  <a name="cancel"></a> function cancel()
+
+|  |  |
+| ----- | ----- |
+| 说明 | 取消录音和评测 |
+| 参数 | --- | 
+
+<br/>
+
 *  <a name="setServerAddr"></a> function setServerAddr(host)
 
 |  |  |
@@ -212,7 +221,7 @@
 | ----- | ----- |
 | 说明 | 停止录音回调函数 |
 | 参数e | 回调事件 | 
-| 返回值 | {"text":"评测文本","mode":"评测模式","sessionId":"sessionId","voice":"opus音频"} | 
+| 返回值 | {"text":"评测文本","mode":"评测模式","sessionId":"sessionId","voice":"opus音频", "isCancel": "是否被取消"} | 
 
 <br/>
 
@@ -252,6 +261,16 @@
 | ----- | ----- |
 | 说明 | 本地音频播放结束回调函数 |
 | 参数 | --- | 
+
+<br/>
+
+
+*  <a name="onPCM"></a> function onPCM(pcm)
+
+|  |  |
+| ----- | ----- |
+| 说明 | 实时音频pcm回调函数 |
+| 参数 | Float32Array | 
 
 <br/>
 
