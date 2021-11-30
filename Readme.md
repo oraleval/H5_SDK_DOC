@@ -247,6 +247,14 @@
 
 <br/>
 
+*  <a name="onPCM"></a> function onPCM(pcm)
+
+|  |  |
+| ----- | ----- |
+| 说明 | pcm回调 |
+| 参数pcm | Float32Array | 
+<br/>
+
 *  <a name="onPlayLocal"></a> function onPlayLocal()
 
 |  |  |
