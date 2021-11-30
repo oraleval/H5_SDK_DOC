@@ -6,6 +6,7 @@
     * [function EvalSDK](#EvalSDK)
     * [function start](#start)
     * [function stop](#stop)
+    * [function cancel](#cancel)
     * [function setServerAddr](#setServerAddr)
     * [function setAudioFormat](#setAudioFormat)
     * [function setScoreCoefficient](#setScoreCoefficient)
