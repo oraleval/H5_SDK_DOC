@@ -23,6 +23,7 @@
     * [function onStop](#onStop)
     * [function onError](#onError)
     * [function onResult](#onResult)
+    * [function onPCM](#onPCM)
     * [function onPlayLocal](#onPlayLocal)
     * [function onStopPlayLocal](#onStopPlayLocal)
 * [示例demo](#create)
