@@ -253,6 +253,8 @@
 | ----- | ----- |
 | 说明 | pcm回调 |
 | 参数pcm | Float32Array | 
+| 返回值 | Float32Array |
+
 <br/>
 
 *  <a name="onPlayLocal"></a> function onPlayLocal()
